@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="col-md-12">
+ <br>
+
+            <div class="row">
+                <div id="automobil" class="col-xs-6">
+
+                </div>
+                 <div class="col-xs-6">
+                    <div class="form-inline">
+                         X <input type="text" class="form-control" id="x" style="width: 50px"/>
+                         Y <input type="text" class="form-control" id="y" style="width: 50px"/>
+                        <button class='btn btn-success'  onclick="unesiKoordinate()" style="width: 150px;">Promeni koordinate</button> 
+                        <br><hr>
+                        <button class='btn btn-success'  onclick="moveLeft()" style="width: 50px;height: 50px">←</button> 
+                        <button class='btn btn-success btn-1' onclick="moveUp()" style="width: 50px;height: 50px;margin-bottom: 104px;">↑</button>  
+                        <button class='btn btn-success btn-2' onclick="moveDown()" style="width: 50px;height: 50px;margin-top: 104px;margin-left: -52px;">↓</button>  
+                         <button class='btn btn-success' onclick="moveRight()" style="width: 50px;height: 50px">→</button>   
+                    </div>
+                </div>
+            </div>
+ <!--<div id="boxes">
+    <div style="width:50px; height: 50px;background-color:blue;display:inline-block;margin-left:25px">
+
+    </div>
+    <div style="width:50px; height: 50px;background-color:red;display:inline-block;margin-left:25px">
+
+    </div>
+ </div>
+ -->
+ <button onclick="enableMovement()"> Klikni</button>
+ <button onclick="turboOn()"> ON </button>
+ <button onclick="turboOff()"> OFF </button>
+ <input type="text" id="limit" />
+            <hr>
+            <div class="pxrow" id="boxes">
+               
+                <div class="" style="display:inline-block;">
+                    <img id="fica" src="ficko.gif" style="width:200px;" />
+                </div>
+                
+                 
+            </div>
+        </div>
+	<audio id="audio" src="sirena.mp3" style="display: none"></audio>
+        
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+        <script src="primer.js"></script>
+    </body>
+</html>
+
+
+    
+   
+
